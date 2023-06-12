@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jannah's Website Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="Images/logo/logo-05.png" class="logo">
+            <ul class="links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <h1 class="big">Designing your vision,<br> one pixel at a time.</h1>
+            <p>Hi! I am <span>Jannah Nava</span>, a filipina graphic designer<br>with a passion for creating visually stunning designs.</p>
+        </div>
+    </div>
+</div>
+<!--------about------------------>
+<div id="about">
+    <div class="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Images/pic.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">Hi! I'm Jannah.</h1>
+                    <p class="big">
+                        As a highly skilled graphic and web designer, I bring 3 years of invaluable professional experience to the table. My primary focus lies in elevating brands through the creation of exceptional and visually striking designs. I am committed to going beyond the expected by delivering exceptional value.</p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab( 'skills' )">Skills</p>
+                            <p class="tab-links" onclick="opentab( 'experience' )">Experience</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Graphic Design</span><br>Designing eye-catching logos, banners, posts, and ads that reflect brand's unique personality and messaging.</li>
+                                <li><span>Video Editing</span><br>Creating engaging and impactful video content specifically tailored for various social media platforms to attract and captivate audiences.</li>
+                                <li><span>Web Design</span><br>Designing landing pages and web interfaces.</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>Social Media Content & Marketing Designer (2022-Present)</span><br>Curating and designing all types of social media content and marketing graphics for multiple clients.</li>
+                                <li><span>Graphics Designer/Etsy VA (2022)</span><br>Creation of website graphics and designing ecommerce products as well as creation of Landing Pages.</li>
+                                <li><span>Virtual Assistant (2021)</span><br>Organization of files and tasks through the company storage system, email management and other admin tasks.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!----------------------portfolio---------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Works</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="Images/works/1.png">
+            </div>
+            <div class="work">
+                <img src="Images/works/2.png">
+            </div>
+            <div class="work">
+                <img src="Images/works/3.png">
+            </div>
+        </div>
+        <div class="work-list">
+            <div class="work">
+                <img src="Images/works/4.png">
+            </div>
+            <div class="work">
+                <img src="Images/works/5.png">
+            </div>
+            <div class="work">
+                <img src="Images/works/6.png">
+            </div>
+        </div>
+        <div class="work-list">
+            <div class="work">
+                <img src="Images/works/10.png">
+            </div>
+            <div class="work">
+                <img src="Images/works/11.png">
+            </div>
+            <div class="work">
+                <img src="Images/works/12.png">
+            </div>
+        </div>
+        <div class="work-list">
+            <div class="work">
+                <img src="Images/works/9.png">
+            </div>
+            <div class="work">
+                <img src="Images/works/8.png">
+            </div>
+            <div class="work">
+                <img src="Images/works/7.png">
+            </div>
+    </div>
+
+</div>
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab (tabname){
+        
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+        
+    }
+
+</script>
+
+</body>
+</html>
